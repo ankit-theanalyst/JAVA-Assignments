@@ -1,0 +1,37 @@
+﻿Q1.What is the difference between Compiler and Interpreter
+
+
+A compiler translates the entire code before execution, generating an executable file, while an interpreter executes the code line by line without prior translation. Compilers produce faster code but have a separate compilation step, while interpreters provide immediate feedback and are more flexible but may be slower.
+
+
+Q2.What is the difference between JDK, JRE, and JVM?
+
+
+The JDK is used by developers for Java application development and includes the JRE. The JRE is used by end-users to run Java applications and includes the JVM, which executes Java bytecode and ensures platform independence.
+
+
+Q3.How many types of memory areas are allocated by JVM?
+
+
+The Java Virtual Machine (JVM) allocates memory in different areas to efficiently manage the execution of Java programs. The main memory areas allocated by the JVM are as follows:
+
+
+Heap Memory: The heap is a runtime data area where objects are dynamically allocated. It is the primary memory area used by Java programs. The heap is further divided into two areas: Young Generation (Eden space, Survivor spaces) and Old Generation (Tenured space).
+
+
+Stack Memory: Each thread in a Java program has its own stack memory, which is used for storing method invocations and local variables. The stack memory is organized as frames, with each frame corresponding to a method call.
+
+
+Method Area: The method area, also known as the permanent generation (prior to Java 8) or the metaspace (starting from Java 8), stores class-level data, including bytecode, method information, constant pool, and static variables.
+
+
+Program Counter (PC) Register: Each thread in the JVM has its own program counter register, which holds the address of the currently executing instruction.
+
+
+Native Method Stack: The native method stack is used for executing native methods, which are written in languages other than Java, such as C or C++.
+
+
+Runtime Constant Pool: The runtime constant pool is a per-class data structure that stores constant values, symbolic references, and other information required by the class.
+
+
+These memory areas work together to manage the execution and memory allocation of Java programs in a structured and efficient manner.
