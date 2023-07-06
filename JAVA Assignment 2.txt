@@ -1,0 +1,116 @@
+﻿Q1. What are the Conditional Operators in Java?
+Conditional operators in Java include:
+
+
+Equality operators: == (equal to) and != (not equal to).
+Relational operators: < (less than), > (greater than), <= (less than or equal to), and >= (greater than or equal to).
+Logical operators: && (logical AND), || (logical OR), and ! (logical NOT).
+
+
+Q2. What are the types of operators based on the number of operands?
+Based on the number of operands, operators can be categorized as:
+
+
+Unary operators: Operators that work with a single operand, such as - (negation) or ++ (increment).
+Binary operators: Operators that work with two operands, such as + (addition) or * (multiplication).
+Ternary operator: The conditional operator ?:, which takes three operands.
+
+
+Q3. What is the use of Switch case in Java programming?
+The switch case statement in Java is used for multi-way branching. It provides an alternative approach to if-else statements when checking different values of a variable or expression. It simplifies code readability and structure by allowing different code blocks to be executed based on the value of the expression.
+
+
+Q4. What are the conditional statements, and what is their use in Java?
+Conditional statements in Java are used to perform different actions based on different conditions. They include:
+
+
+If statement: Executes a block of code if a specified condition is true.
+If-else statement: Executes one block of code if the condition is true and another block if the condition is false.
+Nested if-else statement: Contains if-else statements within if-else statements to handle multiple conditions.
+
+
+Q5. What is the syntax of the if-else statement?
+
+
+The syntax of the if-else statement in Java is as follows:
+
+
+if (condition) {
+    // code to be executed if the condition is true
+} else {
+    // code to be executed if the condition is false
+}
+
+
+
+
+Q6. How do you compare two strings in Java?
+
+
+To compare two strings in Java, you can use the equals() method or the compareTo() method.
+
+
+equals() method: It compares the contents of the strings for equality.
+compareTo() method: It compares two strings lexicographically and returns an integer value representing their comparison result.
+
+
+
+
+Q7. What is a Mutable String in Java? Explain with an example.
+
+
+In Java, strings are immutable by default, meaning their values cannot be changed once created. However, the StringBuilder and StringBuffer classes provide mutable string representations. These classes allow appending, modifying, or deleting characters within the string. An example of using StringBuilder:
+
+
+StringBuilder mutableString = new StringBuilder("Hello");
+mutableString.append(" World");
+System.out.println(mutableString); // Output: Hello World
+
+
+
+
+Q8. Write a program to sort a String alphabetically.
+
+
+Here's an example program in Java to sort a string alphabetically:
+
+
+import java.util.Arrays;
+
+
+public class StringSort {
+    public static void main(String[] args) {
+        String input = "OpenAI";
+        char[] chars = input.toCharArray();
+        Arrays.sort(chars);
+        String sortedString = new String(chars);
+        System.out.println(sortedString); // Output: AIOeKnP
+    }
+}
+
+
+Q9.Write a program to check if the letter 'e' is present in the word**
+
+
+**'Umbrella'.**
+
+
+public class LetterCheck {
+    public static void main(String[] args) {
+        String word = "Umbrella";
+        boolean letterFound = false;
+        
+        for (int i = 0; i < word.length(); i++) {
+            if (word.charAt(i) == 'e') {
+                letterFound = true;
+                break;
+            }
+        }
+        
+        if (letterFound) {
+            System.out.println("The letter 'e' is present in the word.");
+        } else {
+            System.out.println("The letter 'e' is not present in the word.");
+        }
+    }
+}
